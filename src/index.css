@@ -1,0 +1,90 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Geist", sans-serif;
+    background-color: #0e131f;
+    color: #f3f3f3;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .facss-gradient {
+    background: linear-gradient(
+      135deg,
+      rgba(19, 162, 85, 0.1) 0%,
+      rgba(14, 19, 31, 0.1) 100%
+    );
+  }
+
+  .facss-glow {
+    box-shadow: 0 0 250px 400px rgba(19, 162, 85, 0.1);
+  }
+
+  .facss-glow-strong {
+    box-shadow: 0 0 250px 234px rgba(19, 162, 85, 0.2);
+  }
+
+  .facss-card {
+    background: linear-gradient(
+      135deg,
+      rgba(14, 19, 31, 0.1) 0%,
+      rgba(19, 162, 85, 0.1) 100%
+    );
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .facss-input {
+    background-color: #0e131f;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #f3f3f3;
+    transition: all 0.3s ease;
+  }
+
+  .facss-input:focus {
+    outline: none;
+    border-color: #13a255;
+    box-shadow: 0 0 0 2px rgba(19, 162, 85, 0.2);
+  }
+
+  .facss-button {
+    background: linear-gradient(135deg, #13a255 0%, #0e8a45 100%);
+    transition: all 0.3s ease;
+  }
+
+  .facss-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(19, 162, 85, 0.3);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #13a255 0%, #0e8a45 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+}
