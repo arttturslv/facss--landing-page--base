@@ -33,4 +33,7 @@ Antes de começar, certifique-se de ter instalado:
    ```bash
    http://localhost:5173/
    ```
+   ---
+   <img width="1920" height="3775" alt="screencapture-localhost-5173-2025-08-29-10_22_37" src="https://github.com/user-attachments/assets/5e619ae5-00b7-400b-9f92-3b7ce09b4648" />
+
    
