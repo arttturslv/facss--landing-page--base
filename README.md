@@ -19,7 +19,7 @@ Antes de começar, certifique-se de ter instalado:
    ```
 2. **Acesse a pasta do projeto**
    ```bash
-   cd facss--landing-page--base-main
+   cd facss--landing-page--base
    ```
 3. **Instale as dependências**
    ```bash
